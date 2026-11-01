@@ -1,27 +1,22 @@
 :root {
-  /* Warna utama */
   --text: #cbd5e1;
   --text-h: #f8fafc;
   --bg: #0f172a;
   --border: #334155;
   --code-bg: #1e293b;
 
-  /* Accent */
   --accent: #38bdf8;
   --accent-bg: rgba(56, 189, 248, 0.1);
   --accent-border: rgba(56, 189, 248, 0.5);
 
-  /* Warna komponen */
   --social-bg: rgba(30, 41, 59, 0.5);
   --card-bg: #1e293b;
   --header-bg: #151b2b;
 
-  /* Warna performa trading */
   --success: #22c55e;
   --danger: #ef4444;
   --warning: #f59e0b;
 
-  /* Shadow */
   --shadow:
     rgba(0, 0, 0, 0.2) 0 10px 15px -3px,
     rgba(0, 0, 0, 0.1) 0 4px 6px -2px;
@@ -240,4 +235,42 @@ td {
   h2 {
     font-size: 18px;
   }
+}
+
+.forex-chart-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.forex-chart-section label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.forex-chart-box {
+  width: 100%;
+  min-height: 350px;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.forex-chart-section h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.forex-error {
+  background-color: #1e293b;
+  border: 1px solid #ef4444;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.forex-error button {
+  background-color: #0284c7;
+  color: white;
+  border: none;
+  padding: 12px 20px;
 }

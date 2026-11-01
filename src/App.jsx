@@ -6,6 +6,7 @@ import PerformanceSummary from './components/PerformanceSummary.jsx';
 import './App.css';
 import TradeForm from './components/TradeForm.jsx';
 import TradeList from './components/TradeList.jsx';
+import ForexChart from './components/ForexChart.jsx';
 
 function App() {
   const [trades, setTrades] = useState([
@@ -47,6 +48,7 @@ function App() {
         <AccountSummary />
 
         <PerformanceSummary trades={trades} />
+        <ForexChart />
         <TradeForm onTambahTrade={tambahTrade} />
         <TradeList trades={trades} />
       </main>
