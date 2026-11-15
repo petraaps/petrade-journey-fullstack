@@ -7,7 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "dev:api": "npm --prefix backend run start:dev",
+    "build:api": "npm --prefix backend run build",
+    "test:api": "npm --prefix backend run test:e2e -- --runInBand",
+    "test:ui": "playwright test"
   },
   "dependencies": {
     "lightweight-charts": "^5.2.1",
@@ -16,6 +20,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.65.1",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",

@@ -277,4 +277,38 @@ main {
   margin: 0;
 }
 
-
+/* Kontrol CRUD dan status API */
+main { width: 100%; max-width: 1440px; margin-inline: auto; }
+.trade-form fieldset {
+  grid-column: 1 / -1; min-width: 0; margin: 0; padding: 0; border: 0;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px;
+}
+.full-width { grid-column: 1 / -1; }
+.trade-form .checkbox-label { display: flex; flex-direction: row; align-items: center; gap: 10px; }
+.trade-form .checkbox-label input { width: 18px; height: 18px; }
+.trade-form textarea { resize: vertical; background: #0f172a; width: 100%; }
+.feedback { padding: 16px; border: 1px solid #334155; border-radius: 8px; }
+.feedback-error { color: #fecaca; background: #451a24; border-color: #b45363; }
+.feedback-status { color: #86efac; margin-block: 12px; min-height: 24px; }
+.storage-note { font-size: 14px; color: #94a3b8; }
+.btn-secondary, .btn-danger, .feedback button {
+  padding: 10px 14px; border: 1px solid #475569; background: #243449; color: #f8fafc;
+}
+.btn-danger { color: #fecaca; border-color: #b45363; background: #451a24; }
+.trade-actions { display: flex; gap: 8px; flex-wrap: wrap; min-width: 160px; align-items: center; }
+.trade-notes { min-width: 180px; max-width: 280px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.trade-table { min-width: 1050px; }
+.account-card p { overflow-wrap: anywhere; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+button:focus-visible, a:focus-visible { outline: 2px solid #38bdf8; outline-offset: 4px; }
+@media (max-width: 768px) {
+  main { padding: 20px 16px; }
+  .header { padding: 24px 16px; }
+  .header nav { flex-wrap: wrap; gap: 16px; }
+  .trade-form fieldset { grid-template-columns: 1fr; }
+  .trade-form { padding: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
